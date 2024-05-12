@@ -1,0 +1,17 @@
+# Aplicar manifiesto
+kubectl apply -f  <YAML FILE>
+kubectl apply -f  01-pod.yaml
+
+# Obtener pods activos
+kubectl get pods
+
+# Ejecutar
+kubectl exec -it nginx  -- <BASH COMMAND>
+kubectl exec -it nginx  -- sh
+
+# Borrar pod
+kubectl delete pod nginx
+
+
+
+# DEPLOYMENT: Permite administrar el ciclo de vida de los pods

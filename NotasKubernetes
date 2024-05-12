@@ -1,0 +1,12 @@
+# Obtener version de cliente
+kubectl version --client=true
+# Obtener nodos
+kubectl get nodes
+# Listar archivo de configuracion
+kubectl config get-contexts
+# Listar namespace (separar carga - se puede compartir recursos - dividir trafico)
+kubectl get ns
+# POD: Conjunto de contenedores (recomendable 1 pod por aplicacion)
+kubectl -n kube-system get pods
+# mostrar mas informacion
+kubectl -n kube-system get pods -o wide
